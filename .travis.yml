@@ -7,7 +7,7 @@ python: "3.6"
 addons:
   artifacts:
     paths:
-    - $(ls $TRAVIS_BUILD_DIR/web/* | tr "\n" ":")
+    - $(ls web/* | tr "\n" ":")
     target_paths: /adabot
     debug: true
 
@@ -15,3 +15,4 @@ script:
   - mkdir -p web
   - cd subfolder
   - python -u -m script $TRAVIS_BUILD_DIR/web/test_file.txt
+  - cd ..
