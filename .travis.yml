@@ -13,5 +13,5 @@ addons:
 
 script:
   - mkdir -p web
-  - cd adabot
-  - python -u -m subfolder.script $TRAVIS_BUILD_DIR/web/libraries.json
+  - cd subfolder
+  - python -u -m script $TRAVIS_BUILD_DIR/web/test_file.txt

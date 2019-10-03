@@ -7,14 +7,13 @@ import datetime
 
 # Setup ArgumentParser
 cmd_line_parser = argparse.ArgumentParser(
-    description="Adabot utility for CircuitPython Libraries.",
-    prog="Adabot CircuitPython Libraries Utility"
+    description="Testing S3 Deploy.",
+    prog="yes"
 )
 cmd_line_parser.add_argument(
     "output_file",
     help="Output log to the filename provided.",
     metavar="<OUTPUT FILENAME>",
-    dest="output_file"
 )
 
 
